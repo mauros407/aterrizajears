@@ -1,0 +1,1827 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- ══ SEO Primario ══ -->
+    <title>KeysArs – Licencias Digitales Premium en Argentina | Windows, Office, Adobe</title>
+    <meta name="description"
+        content="Comprá licencias digitales originales en Argentina al mejor precio en pesos. Windows 10/11, Office 2021/365, Adobe, antivirus y más. Entrega inmediata por WhatsApp. ¡Garantía total!" />
+    <meta name="keywords"
+        content="licencias digitales Argentina, comprar Windows barato Argentina, Office 365 precio Argentina, licencias originales pesos, software original Argentina, Windows 11 Pro Argentina, Office 2021 Argentina, Adobe Argentina, antivirus Argentina, licencias digitales baratas, KeysArs" />
+    <meta name="author" content="KeysArs" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://keysars.github.io/" />
+
+    <!-- ══ Geo-targeting Argentina ══ -->
+    <meta name="geo.region" content="AR" />
+    <meta name="geo.country" content="Argentina" />
+    <meta name="language" content="Spanish" />
+    <meta name="distribution" content="global" />
+    <meta name="rating" content="general" />
+
+    <!-- ══ Open Graph (Facebook, WhatsApp, etc.) ══ -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="KeysArs" />
+    <meta property="og:title" content="KeysArs – Licencias Digitales Premium en Argentina" />
+    <meta property="og:description"
+        content="Comprá licencias originales en pesos argentinos: Windows, Office, Adobe y más. Entrega inmediata, garantía de activación o te devolvemos el dinero." />
+    <meta property="og:url" content="https://keysars.github.io/" />
+    <meta property="og:image" content="https://keysars.github.io/logo.png" />
+    <meta property="og:image:alt" content="KeysArs - Licencias Digitales Premium" />
+    <meta property="og:locale" content="es_AR" />
+
+    <!-- ══ Twitter / X Cards ══ -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="KeysArs – Licencias Digitales Premium en Argentina" />
+    <meta name="twitter:description"
+        content="Windows, Office, Adobe y más al mejor precio en Argentina. Entrega inmediata y garantía total." />
+    <meta name="twitter:image" content="https://keysars.github.io/logo.png" />
+
+    <!-- ══ Schema.org – LocalBusiness ══ -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Store",
+        "name": "KeysArs",
+        "description": "Tienda de licencias digitales originales en Argentina. Windows, Office, Adobe, antivirus y más al mejor precio en pesos argentinos.",
+        "url": "https://keysars.github.io/",
+        "logo": "https://keysars.github.io/logo.png",
+        "image": "https://keysars.github.io/logo.png",
+        "telephone": "+54-9-387-325-4866",
+        "priceRange": "$$",
+        "currenciesAccepted": "ARS",
+        "paymentAccepted": "Transferencia bancaria, Mercado Pago",
+        "areaServed": {
+            "@type": "Country",
+            "name": "Argentina"
+        },
+        "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "AR"
+        },
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+54-9-387-325-4866",
+            "contactType": "customer service",
+            "availableLanguage": "Spanish",
+            "contactOption": "TollFree"
+        },
+        "sameAs": [
+            "https://wa.me/5493873254866"
+        ]
+    }
+    </script>
+
+    <link rel="icon" type="image/png" href="logo.png" />
+    <link rel="apple-touch-icon" href="logo.png" />
+
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet" />
+
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Inter', 'sans-serif'] },
+                    colors: {
+                        neon: {
+                            blue: '#3B82F6',
+                            violet: '#8B5CF6',
+                            cyan: '#06B6D4',
+                            pink: '#EC4899',
+                        }
+                    },
+                    boxShadow: {
+                        neon: '0 0 20px rgba(139,92,246,0.5), 0 0 40px rgba(59,130,246,0.2)',
+                        card: '0 8px 32px rgba(0,0,0,0.4)',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* ── Global ── */
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+
+        html {
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            background: #070714;
+            color: #e2e8f0;
+            overflow-x: hidden;
+        }
+
+        /* ── Animated gradient background ── */
+        .bg-animated {
+            background: linear-gradient(135deg, #070714 0%, #0d0a2e 40%, #160f3a 70%, #070714 100%);
+            background-size: 400% 400%;
+            animation: gradShift 12s ease infinite;
+        }
+
+        @keyframes gradShift {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        /* ── Floating orbs ── */
+        .orb {
+            position: fixed;
+            border-radius: 50%;
+            filter: blur(80px);
+            opacity: 0.18;
+            pointer-events: none;
+            z-index: 0;
+            animation: float 18s ease-in-out infinite alternate;
+        }
+
+        .orb-1 {
+            width: 500px;
+            height: 500px;
+            background: #7c3aed;
+            top: -140px;
+            left: -140px;
+        }
+
+        .orb-2 {
+            width: 400px;
+            height: 400px;
+            background: #2563eb;
+            bottom: -120px;
+            right: -80px;
+            animation-delay: -6s;
+        }
+
+        .orb-3 {
+            width: 300px;
+            height: 300px;
+            background: #0891b2;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            animation-delay: -12s;
+        }
+
+        @keyframes float {
+            from {
+                transform: translate(0, 0) scale(1);
+            }
+
+            to {
+                transform: translate(30px, 40px) scale(1.08);
+            }
+        }
+
+        /* ── Glassmorphism card ── */
+        .glass {
+            background: rgba(255, 255, 255, 0.04);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 16px;
+            transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
+        }
+
+        .glass:hover {
+            transform: translateY(-8px) scale(1.02);
+            box-shadow: 0 0 28px rgba(139, 92, 246, 0.45), 0 16px 40px rgba(0, 0, 0, 0.5);
+            border-color: rgba(139, 92, 246, 0.45);
+        }
+
+        /* ── Neon gradient text ── */
+        .neon-text {
+            background: linear-gradient(90deg, #818cf8, #8b5cf6, #3b82f6, #06b6d4);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            background-size: 300% 100%;
+            animation: shimmer 4s linear infinite;
+        }
+
+        @keyframes shimmer {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            100% {
+                background-position: 300% 50%;
+            }
+        }
+
+        /* ── Neon button ── */
+        .btn-neon {
+            background: linear-gradient(135deg, #7c3aed, #3b82f6);
+            border: none;
+            border-radius: 10px;
+            color: #fff;
+            font-weight: 700;
+            padding: 0.65rem 1.4rem;
+            cursor: pointer;
+            transition: box-shadow 0.3s ease, transform 0.2s ease, opacity 0.2s;
+            box-shadow: 0 4px 18px rgba(124, 58, 237, 0.5);
+        }
+
+        .btn-neon:hover {
+            box-shadow: 0 6px 28px rgba(59, 130, 246, 0.7), 0 0 12px rgba(139, 92, 246, 0.6);
+            transform: translateY(-2px);
+        }
+
+        .btn-neon:active {
+            transform: scale(0.97);
+        }
+
+        /* ── WhatsApp / Telegram buttons ── */
+        .btn-wa {
+            background: linear-gradient(135deg, #128C7E, #25D366);
+            color: #fff;
+            font-weight: 700;
+            border-radius: 12px;
+            padding: 0.8rem 1.8rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            transition: box-shadow 0.3s, transform 0.2s;
+            box-shadow: 0 4px 20px rgba(37, 211, 102, 0.35);
+        }
+
+        .btn-wa:hover {
+            box-shadow: 0 6px 28px rgba(37, 211, 102, 0.6);
+            transform: translateY(-3px);
+        }
+
+        .btn-tg {
+            background: linear-gradient(135deg, #0088cc, #00b4d8);
+            color: #fff;
+            font-weight: 700;
+            border-radius: 12px;
+            padding: 0.8rem 1.8rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            transition: box-shadow 0.3s, transform 0.2s;
+            box-shadow: 0 4px 20px rgba(0, 136, 204, 0.35);
+        }
+
+        .btn-tg:hover {
+            box-shadow: 0 6px 28px rgba(0, 136, 204, 0.6);
+            transform: translateY(-3px);
+        }
+
+        /* ── Sticky navbar ── */
+        #navbar {
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            background: rgba(7, 7, 20, 0.75);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+            transition: box-shadow 0.3s;
+        }
+
+        #navbar.scrolled {
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        /* ── Mobile menu ── */
+        #mobile-menu {
+            display: none;
+        }
+
+        #mobile-menu.open {
+            display: block;
+        }
+
+        /* ── Price badge ── */
+        .price-badge {
+            background: linear-gradient(135deg, #7c3aed 0%, #3b82f6 100%);
+            border-radius: 999px;
+            font-size: 0.85rem;
+            padding: 2px 12px;
+            font-weight: 700;
+            display: inline-block;
+        }
+
+        /* ── Search input ── */
+        #search-input {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            border-radius: 12px;
+            color: #e2e8f0;
+            padding: 0.65rem 1rem 0.65rem 2.75rem;
+            outline: none;
+            transition: border-color 0.3s, box-shadow 0.3s;
+            width: 100%;
+            max-width: 420px;
+        }
+
+        #search-input:focus {
+            border-color: #7c3aed;
+            box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.2);
+        }
+
+        #search-input::placeholder {
+            color: rgba(226, 232, 240, 0.35);
+        }
+
+        /* ── Scroll reveal ── */
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.7s ease, transform 0.7s ease;
+        }
+
+        .reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* ── Hero gradient overlay ── */
+        .hero-glow {
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(ellipse 80% 60% at 50% 0%, rgba(124, 58, 237, 0.18) 0%, transparent 70%);
+            pointer-events: none;
+        }
+
+        /* ── Model carousel ── */
+        .model-img-wrap {
+            position: relative;
+            flex-shrink: 0;
+            border-radius: 24px;
+        }
+
+        .model-img-wrap::before {
+            content: '';
+            position: absolute;
+            inset: -3px;
+            border-radius: 26px;
+            background: linear-gradient(135deg, #7c3aed, #3b82f6, #06b6d4);
+            z-index: 0;
+            animation: borderGlow 4s linear infinite;
+        }
+
+        @keyframes borderGlow {
+
+            0%,
+            100% {
+                opacity: 0.7;
+            }
+
+            50% {
+                opacity: 1;
+            }
+        }
+
+        /* Carousel container */
+        .model-carousel {
+            position: relative;
+            z-index: 1;
+            border-radius: 22px;
+            overflow: hidden;
+            width: 100%;
+            aspect-ratio: 3/4;
+            max-width: 440px;
+            background: rgba(0, 0, 0, 0.3);
+        }
+
+        .model-slide {
+            position: absolute;
+            inset: 0;
+            opacity: 0;
+            animation: modelSlide 12s infinite;
+        }
+
+        .model-slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: top center;
+            display: block;
+            border-radius: 22px;
+        }
+
+        .model-slide:nth-child(1) {
+            animation-delay: 0s;
+        }
+
+        .model-slide:nth-child(2) {
+            animation-delay: 4s;
+        }
+
+        .model-slide:nth-child(3) {
+            animation-delay: 8s;
+        }
+
+        @keyframes modelSlide {
+            0% {
+                opacity: 0;
+                transform: scale(1.04);
+            }
+
+            6% {
+                opacity: 1;
+                transform: scale(1);
+            }
+
+            30% {
+                opacity: 1;
+                transform: scale(1);
+            }
+
+            36% {
+                opacity: 0;
+                transform: scale(0.97);
+            }
+
+            100% {
+                opacity: 0;
+                transform: scale(1.04);
+            }
+        }
+
+        /* Slide dots */
+        .model-dots {
+            position: absolute;
+            bottom: 12px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 6px;
+            z-index: 2;
+        }
+
+        .model-dot {
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.4);
+            animation: dotActive 12s infinite;
+        }
+
+        .model-dot:nth-child(1) {
+            animation-delay: 0s;
+        }
+
+        .model-dot:nth-child(2) {
+            animation-delay: 4s;
+        }
+
+        .model-dot:nth-child(3) {
+            animation-delay: 8s;
+        }
+
+        @keyframes dotActive {
+
+            0%,
+            5% {
+                background: #fff;
+                transform: scale(1.4);
+            }
+
+            36%,
+            100% {
+                background: rgba(255, 255, 255, 0.35);
+                transform: scale(1);
+            }
+        }
+
+        .model-img-glow {
+            position: absolute;
+            bottom: -30px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80%;
+            height: 60px;
+            background: radial-gradient(ellipse, rgba(124, 58, 237, 0.45) 0%, transparent 70%);
+            filter: blur(20px);
+            z-index: 0;
+        }
+
+        /* ── Badge "popular" ── */
+        .popular-badge {
+            position: absolute;
+            top: -12px;
+            right: 16px;
+            background: linear-gradient(90deg, #ec4899, #8b5cf6);
+            font-size: 0.72rem;
+            font-weight: 800;
+            padding: 3px 14px;
+            border-radius: 999px;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            box-shadow: 0 0 12px rgba(236, 72, 153, 0.55);
+        }
+
+        /* ── Feature chip ── */
+        .chip {
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            background: rgba(139, 92, 246, 0.12);
+            border: 1px solid rgba(139, 92, 246, 0.2);
+            border-radius: 999px;
+            font-size: 0.72rem;
+            font-weight: 600;
+            padding: 3px 10px;
+            color: #a78bfa;
+        }
+
+        /* ── Stats ── */
+        .stat-num {
+            font-size: 2.4rem;
+            font-weight: 900;
+        }
+
+        /* ── Scrollbar ── */
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #070714;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #7c3aed;
+            border-radius: 3px;
+        }
+
+        /* ── Section divider ── */
+        .divider {
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(139, 92, 246, 0.4), transparent);
+            margin: 0 auto;
+        }
+
+        /* ── No-results ── */
+        #no-results {
+            display: none;
+        }
+
+        /* ── Product grid ── */
+        #product-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.25rem;
+        }
+
+        @media (min-width: 768px) {
+            #product-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        @media (min-width: 1280px) {
+            #product-grid {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+
+        /* ── Toast ── */
+        #toast {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            z-index: 9999;
+            background: linear-gradient(135deg, #7c3aed, #3b82f6);
+            color: #fff;
+            padding: 0.8rem 1.5rem;
+            border-radius: 12px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            box-shadow: 0 8px 24px rgba(124, 58, 237, 0.5);
+            transform: translateY(100px);
+            opacity: 0;
+            transition: transform 0.4s ease, opacity 0.4s ease;
+            pointer-events: none;
+        }
+
+        #toast.show {
+            transform: translateY(0);
+            opacity: 1;
+        }
+
+        /* ── Floating WhatsApp Button ── */
+        #wa-float {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 99999;
+            width: fit-content;
+            display: flex;
+            align-items: flex-end;
+            flex-direction: row-reverse;
+            gap: 12px;
+            cursor: pointer;
+            transition: opacity 0.4s ease, transform 0.4s ease;
+        }
+
+        /* Siempre visible y al 100% de opacidad */
+        #wa-float:hover #wa-float-btn {
+            transform: scale(1.12);
+        }
+
+        #wa-float-btn {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #128C7E, #25D366);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 6px 24px rgba(37, 211, 102, 0.55), 0 0 0 0 rgba(37, 211, 102, 0.4);
+            animation: waPulse 2.5s ease-in-out infinite;
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+            flex-shrink: 0;
+            text-decoration: none;
+        }
+
+        #wa-float-btn:hover {
+            transform: scale(1.12);
+            box-shadow: 0 8px 32px rgba(37, 211, 102, 0.75);
+        }
+
+        @keyframes waPulse {
+
+            0%,
+            100% {
+                box-shadow: 0 6px 24px rgba(37, 211, 102, 0.55), 0 0 0 0 rgba(37, 211, 102, 0.4);
+            }
+
+            50% {
+                box-shadow: 0 6px 24px rgba(37, 211, 102, 0.55), 0 0 0 14px rgba(37, 211, 102, 0);
+            }
+        }
+
+        #wa-float-tooltip {
+            background: #fff;
+            color: #111827;
+            border-radius: 16px;
+            padding: 12px 16px;
+            max-width: 230px;
+            font-size: 0.82rem;
+            line-height: 1.45;
+            font-weight: 500;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.22);
+            position: relative;
+            opacity: 0;
+            transform: translateX(-10px);
+            transition: opacity 0.35s ease, transform 0.35s ease;
+            pointer-events: none;
+        }
+
+        #wa-float-tooltip.visible {
+            opacity: 1;
+            transform: translateX(0);
+            pointer-events: auto;
+        }
+
+        #wa-float-tooltip::after {
+            content: '';
+            position: absolute;
+            bottom: 14px;
+            left: -8px;
+            border-width: 8px 8px 8px 0;
+            border-style: solid;
+            border-color: transparent #fff transparent transparent;
+        }
+
+        #wa-float-tooltip .wa-close {
+            position: absolute;
+            top: 6px;
+            right: 8px;
+            font-size: 0.75rem;
+            color: #9ca3af;
+            cursor: pointer;
+            line-height: 1;
+            background: none;
+            border: none;
+            padding: 2px 4px;
+        }
+
+        #wa-float-tooltip .wa-close:hover {
+            color: #374151;
+        }
+
+        #wa-float-tooltip strong {
+            display: block;
+            margin-bottom: 4px;
+            font-size: 0.88rem;
+            color: #128C7E;
+        }
+
+        /* Mobile adjustments for WA float */
+        @media (max-width: 640px) {
+            #wa-float {
+                bottom: 20px;
+                right: 20px;
+                flex-direction: column;
+                align-items: flex-end;
+                gap: 8px;
+            }
+
+            #wa-float-btn {
+                width: 54px;
+                height: 54px;
+                border-radius: 50%;
+            }
+
+            #wa-float-tooltip {
+                max-width: min(220px, calc(100vw - 80px));
+                font-size: 0.78rem;
+            }
+
+            #wa-float-tooltip::after {
+                left: auto;
+                right: 18px;
+                bottom: -8px;
+                top: auto;
+                border-width: 8px 8px 0 8px;
+                border-color: #fff transparent transparent transparent;
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-animated relative">
+
+    <!-- Background orbs -->
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+
+    <!-- ════════════════════════════
+       NAVBAR
+  ════════════════════════════ -->
+    <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 px-6 py-3">
+        <div class="max-w-7xl mx-auto flex items-center justify-between">
+
+            <!-- Logo -->
+            <a href="#hero" class="flex items-center gap-2 group">
+                <div class="w-9 h-9 rounded-lg overflow-hidden shadow-lg group-hover:scale-110 transition-transform"
+                    style="box-shadow:0 0 12px rgba(124,58,237,0.5)">
+                    <img src="logo.png" alt="KeysArs Logo" class="w-full h-full object-cover" />
+                </div>
+                <span class="text-lg font-black neon-text tracking-tight">KeysArs</span>
+            </a>
+
+            <!-- Desktop links -->
+            <ul class="hidden md:flex items-center gap-7 text-sm font-medium text-slate-300">
+                <li><a href="#hero" class="hover:text-violet-400 transition-colors">Inicio</a></li>
+                <li><a href="#catalog" class="hover:text-violet-400 transition-colors">Catálogo</a></li>
+                <li><a href="#support" class="hover:text-violet-400 transition-colors">Soporte</a></li>
+                <li><a href="#community" class="hover:text-violet-400 transition-colors">Comunidad</a></li>
+            </ul>
+
+            <!-- CTA desktop -->
+            <div class="hidden md:flex items-center gap-3">
+                <a href="#catalog" class="btn-neon text-sm">
+                    Ver Licencias
+                </a>
+            </div>
+
+            <!-- Hamburger -->
+            <button id="menu-toggle" class="md:hidden p-2 rounded-lg hover:bg-white/5 transition" aria-label="Menú">
+                <i data-lucide="menu" class="w-6 h-6 text-slate-300"></i>
+            </button>
+        </div>
+
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="md:hidden mt-3 pb-3 border-t border-white/5 pt-3 space-y-1">
+            <a href="#hero" class="block px-4 py-2 rounded-lg hover:bg-white/5 text-slate-300 transition"
+                onclick="closeMenu()">Inicio</a>
+            <a href="#catalog" class="block px-4 py-2 rounded-lg hover:bg-white/5 text-slate-300 transition"
+                onclick="closeMenu()">Catálogo</a>
+            <a href="#support" class="block px-4 py-2 rounded-lg hover:bg-white/5 text-slate-300 transition"
+                onclick="closeMenu()">Soporte</a>
+            <a href="#community" class="block px-4 py-2 rounded-lg hover:bg-white/5 text-slate-300 transition"
+                onclick="closeMenu()">Comunidad</a>
+            <!-- WhatsApp en menu movil -->
+            <a href="https://wa.me/5493873254866?text=Hola!%20Estoy%20interesado%20en%20comprar%20una%20licencia.%20%C2%BFMe%20pueden%20ayudar%3F"
+                target="_blank" rel="noopener noreferrer" onclick="closeMenu()"
+                class="flex items-center gap-3 px-4 py-2 rounded-lg transition"
+                style="background:linear-gradient(135deg,rgba(18,140,126,0.15),rgba(37,211,102,0.15));border:1px solid rgba(37,211,102,0.25);">
+                <span
+                    style="width:28px;height:28px;border-radius:50%;background:linear-gradient(135deg,#128C7E,#25D366);display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+                    <svg width="15" height="15" fill="#fff" viewBox="0 0 24 24">
+                        <path
+                            d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
+                        <path
+                            d="M12 0C5.373 0 0 5.373 0 12c0 2.123.555 4.116 1.524 5.847L0 24l6.335-1.504A11.946 11.946 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.003-1.364l-.36-.214-3.737.886.944-3.643-.234-.375A9.818 9.818 0 012.182 12c0-5.423 4.395-9.818 9.818-9.818 5.423 0 9.818 4.395 9.818 9.818 0 5.423-4.395 9.818-9.818 9.818z" />
+                    </svg>
+                </span>
+                <span class="text-sm font-semibold" style="color:#25D366;">Contactar por WhatsApp</span>
+            </a>
+        </div>
+    </nav>
+
+
+    <!-- ════════════════════════════
+       HERO
+  ════════════════════════════ -->
+    <section id="hero" class="relative min-h-screen flex items-center px-6 pt-24 pb-16 overflow-hidden">
+        <div class="hero-glow"></div>
+
+        <div class="relative z-10 max-w-7xl mx-auto w-full flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
+
+            <!-- LEFT: Text content -->
+            <div class="flex-1 text-center lg:text-left animate__animated animate__fadeInLeft">
+                <!-- Tag -->
+                <span class="chip mb-6 inline-flex">
+                    <i data-lucide="shield-check" class="w-3 h-3"></i>
+                    Licencias 100% Originales · Entrega Inmediata
+                </span>
+
+                <h1 class="text-5xl md:text-6xl xl:text-7xl font-black leading-tight mb-6">
+                    Licencias Digitales<br />
+                    <span class="neon-text">Premium al Mejor Precio</span>
+                </h1>
+
+                <p class="text-slate-400 text-lg md:text-xl mb-10 max-w-xl leading-relaxed">
+                    Activa tu software favorito en minutos. Windows, Office, Adobe y mucho más.
+                    Garantía de activación o te devolvemos tu dinero.
+                </p>
+
+                <div class="flex flex-wrap gap-4 justify-center lg:justify-start">
+                    <a href="#catalog" class="btn-neon px-8 py-3 text-base">
+                        🛒 Ver Catálogo
+                    </a>
+                    <a href="#support"
+                        class="px-8 py-3 rounded-[10px] bg-white/5 border border-white/10 text-sm font-semibold hover:bg-white/10 hover:border-violet-400/40 transition">
+                        💬 Hablar con un Asesor
+                    </a>
+                </div>
+
+                <!-- Stats row -->
+                <div class="mt-12 grid grid-cols-3 gap-3 max-w-sm mx-auto lg:mx-0">
+                    <div class="glass p-3 flex flex-col items-center text-center overflow-hidden">
+                        <div class="text-2xl font-black neon-text leading-tight">5K+</div>
+                        <div class="text-slate-400 text-xs mt-1 leading-tight">Clientes<br />felices</div>
+                    </div>
+                    <div class="glass p-3 flex flex-col items-center text-center overflow-hidden">
+                        <div class="text-2xl font-black neon-text leading-tight">98%</div>
+                        <div class="text-slate-400 text-xs mt-1 leading-tight">De<br />satisfacción</div>
+                    </div>
+                    <div class="glass p-3 flex flex-col items-center text-center overflow-hidden">
+                        <div class="text-2xl font-black neon-text leading-tight">24h</div>
+                        <div class="text-slate-400 text-xs mt-1 leading-tight">Soporte<br />activo</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- RIGHT: Model carousel -->
+            <div
+                class="flex-shrink-0 w-full max-w-[280px] sm:max-w-[360px] lg:w-[420px] xl:w-[480px] animate__animated animate__fadeInRight animate__delay-1s mx-auto lg:mx-0">
+                <div class="model-img-wrap mx-auto" style="position:relative;">
+                    <div class="model-carousel">
+                        <!-- Slide 1 -->
+                        <div class="model-slide">
+                            <img src="model1.png" alt="Asesora KeysArs" />
+                        </div>
+                        <!-- Slide 2 -->
+                        <div class="model-slide">
+                            <img src="model2.png" alt="Asesora KeysArs" />
+                        </div>
+                        <!-- Slide 3 -->
+                        <div class="model-slide">
+                            <img src="model3.png" alt="Asesora KeysArs" />
+                        </div>
+                        <!-- Dots -->
+                        <div class="model-dots">
+                            <div class="model-dot"></div>
+                            <div class="model-dot"></div>
+                            <div class="model-dot"></div>
+                        </div>
+                    </div>
+                    <div class="model-img-glow"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll indicator -->
+        <div class="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce opacity-40">
+            <i data-lucide="chevrons-down" class="w-6 h-6 text-violet-400"></i>
+        </div>
+    </section>
+
+    <div class="divider w-full max-w-5xl mx-auto"></div>
+
+
+    <!-- ════════════════════════════
+       TRUST BADGES
+  ════════════════════════════ -->
+    <section class="py-12 px-6">
+        <div class="max-w-5xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-5 reveal">
+            <div class="glass p-5 flex flex-col items-center gap-3 text-center">
+                <div class="w-11 h-11 rounded-xl bg-violet-500/15 flex items-center justify-center">
+                    <i data-lucide="zap" class="w-5 h-5 text-violet-400"></i>
+                </div>
+                <div class="text-sm font-semibold text-slate-200">Entrega Instantánea</div>
+                <div class="text-xs text-slate-500">Recibe tu clave en minutos</div>
+            </div>
+            <div class="glass p-5 flex flex-col items-center gap-3 text-center">
+                <div class="w-11 h-11 rounded-xl bg-blue-500/15 flex items-center justify-center">
+                    <i data-lucide="shield" class="w-5 h-5 text-blue-400"></i>
+                </div>
+                <div class="text-sm font-semibold text-slate-200">100% Original</div>
+                <div class="text-xs text-slate-500">Directamente del fabricante</div>
+            </div>
+            <div class="glass p-5 flex flex-col items-center gap-3 text-center">
+                <div class="w-11 h-11 rounded-xl bg-cyan-500/15 flex items-center justify-center">
+                    <i data-lucide="headphones" class="w-5 h-5 text-cyan-400"></i>
+                </div>
+                <div class="text-sm font-semibold text-slate-200">Soporte 24/7</div>
+                <div class="text-xs text-slate-500">Siempre disponibles para ti</div>
+            </div>
+            <div class="glass p-5 flex flex-col items-center gap-3 text-center">
+                <div class="w-11 h-11 rounded-xl bg-pink-500/15 flex items-center justify-center">
+                    <i data-lucide="refresh-ccw" class="w-5 h-5 text-pink-400"></i>
+                </div>
+                <div class="text-sm font-semibold text-slate-200">Garantía Total</div>
+                <div class="text-xs text-slate-500">Reembolso si no activa</div>
+            </div>
+        </div>
+    </section>
+
+    <div class="divider w-full max-w-5xl mx-auto"></div>
+
+
+    <!-- ════════════════════════════
+       CATALOG
+  ════════════════════════════ -->
+    <section id="catalog" class="py-20 px-6 relative z-10">
+        <div class="max-w-7xl mx-auto">
+
+            <!-- Header -->
+            <div class="text-center mb-12 reveal">
+                <span class="chip mb-4 inline-flex">
+                    <i data-lucide="package" class="w-3 h-3"></i>
+                    Catálogo de Licencias
+                </span>
+                <h2 class="text-4xl md:text-5xl font-black mb-4">
+                    Nuestros <span class="neon-text">Productos Destacados</span>
+                </h2>
+                <p class="text-slate-400 max-w-xl mx-auto">
+                    Selecciona el software que necesitas. Todas las licencias son permanentes y con activación
+                    verificada.
+                </p>
+            </div>
+
+            <!-- Search bar -->
+            <div class="flex justify-center mb-10 reveal">
+                <div class="relative w-full max-w-md">
+                    <i data-lucide="search"
+                        class="w-4 h-4 text-slate-500 absolute left-3 top-1/2 -translate-y-1/2 pointer-events-none"></i>
+                    <input id="search-input" type="text" placeholder="Buscar producto…" oninput="filterProducts()"
+                        autocomplete="off" />
+                </div>
+            </div>
+
+            <!-- Product grid -->
+            <div id="product-grid">
+                <!-- Products injected by JS -->
+            </div>
+
+            <!-- No results -->
+            <div id="no-results" class="text-center py-16">
+                <div class="glass inline-block px-10 py-10 max-w-lg w-full">
+                    <i data-lucide="package-search" class="w-14 h-14 text-violet-400 mx-auto mb-5"></i>
+                    <h3 class="text-xl font-bold text-slate-100 mb-2">¡Muchos más productos y licencias!</h3>
+                    <p class="text-slate-400 text-sm mb-6">No encontramos "<span id="no-results-query"
+                            class="text-violet-300 font-semibold"></span>" en el catálogo visible, pero tenemos cientos
+                        de licencias disponibles.<br />¡Consulta directamente con nuestro servicio de atención!</p>
+                    <div class="flex flex-col sm:flex-row gap-3 justify-center">
+                        <a href="https://wa.me/5493873254866?text=Hola!%20Busco%20una%20licencia%20que%20no%20vi%20en%20el%20catálogo.%20¿Me%20pueden%20ayudar?"
+                            target="_blank" rel="noopener noreferrer" class="btn-wa justify-center">
+                            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                                <path
+                                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
+                                <path
+                                    d="M12 0C5.373 0 0 5.373 0 12c0 2.123.555 4.116 1.524 5.847L0 24l6.335-1.504A11.946 11.946 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.003-1.364l-.36-.214-3.737.886.944-3.643-.234-.375A9.818 9.818 0 012.182 12c0-5.423 4.395-9.818 9.818-9.818 5.423 0 9.818 4.395 9.818 9.818 0 5.423-4.395 9.818-9.818 9.818z" />
+                            </svg>
+                            Consultar por WhatsApp
+                        </a>
+                        <a href="https://t.me/KeysArgentina" target="_blank" rel="noopener noreferrer"
+                            class="btn-tg justify-center">
+                            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.248l-2.01 9.476c-.148.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12l-6.871 4.326-2.962-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.537-.194 1.006.131.873.745z" />
+                            </svg>
+                            Ver grupo Telegram
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="divider w-full max-w-5xl mx-auto"></div>
+
+
+    <!-- ════════════════════════════
+       SUPPORT / CONTACT
+  ════════════════════════════ -->
+    <section id="support" class="py-20 px-6 relative z-10">
+        <div class="max-w-4xl mx-auto">
+
+            <div class="text-center mb-12 reveal">
+                <span class="chip mb-4 inline-flex">
+                    <i data-lucide="headphones" class="w-3 h-3"></i>
+                    Atención al Cliente
+                </span>
+                <h2 class="text-4xl md:text-5xl font-black mb-4">
+                    ¿Necesitas <span class="neon-text">Ayuda?</span>
+                </h2>
+                <p class="text-slate-400">
+                    Nuestro equipo está listo para asesorarte en la compra y activación de tu licencia.
+                </p>
+            </div>
+
+            <!-- Contact cards -->
+            <div class="grid md:grid-cols-2 gap-6 reveal">
+
+                <!-- WhatsApp card -->
+                <div class="glass p-8 flex flex-col items-center text-center gap-5">
+                    <div class="w-16 h-16 rounded-2xl flex items-center justify-center"
+                        style="background:linear-gradient(135deg,#128C7E,#25D366)">
+                        <svg class="w-8 h-8 text-white fill-current" viewBox="0 0 24 24">
+                            <path
+                                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
+                            <path
+                                d="M12 0C5.373 0 0 5.373 0 12c0 2.123.555 4.116 1.524 5.847L0 24l6.335-1.504A11.946 11.946 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.003-1.364l-.36-.214-3.737.886.944-3.643-.234-.375A9.818 9.818 0 012.182 12c0-5.423 4.395-9.818 9.818-9.818 5.423 0 9.818 4.395 9.818 9.818 0 5.423-4.395 9.818-9.818 9.818z" />
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-slate-100 mb-2">Chat de Ventas</h3>
+                        <p class="text-slate-400 text-sm mb-5">Respuesta inmediata · Asesoría personalizada ·
+                            Cotizaciones al instante</p>
+                    </div>
+                    <a href="https://wa.me/5493873254866?text=Hola!%20Me%20interesa%20comprar%20una%20licencia"
+                        target="_blank" rel="noopener noreferrer" class="btn-wa w-full justify-center"
+                        id="whatsapp-btn">
+                        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                            <path
+                                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
+                            <path
+                                d="M12 0C5.373 0 0 5.373 0 12c0 2.123.555 4.116 1.524 5.847L0 24l6.335-1.504A11.946 11.946 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.003-1.364l-.36-.214-3.737.886.944-3.643-.234-.375A9.818 9.818 0 012.182 12c0-5.423 4.395-9.818 9.818-9.818 5.423 0 9.818 4.395 9.818 9.818 0 5.423-4.395 9.818-9.818 9.818z" />
+                        </svg>
+                        Chatear por WhatsApp
+                    </a>
+                </div>
+
+                <!-- Telegram card -->
+                <div class="glass p-8 flex flex-col items-center text-center gap-5">
+                    <div class="w-16 h-16 rounded-2xl flex items-center justify-center"
+                        style="background:linear-gradient(135deg,#0088cc,#00b4d8)">
+                        <svg class="w-8 h-8 text-white fill-current" viewBox="0 0 24 24">
+                            <path
+                                d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.248l-2.01 9.476c-.148.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12l-6.871 4.326-2.962-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.537-.194 1.006.131.873.745z" />
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-slate-100 mb-2">Referencias y Pruebas</h3>
+                        <p class="text-slate-400 text-sm mb-5">Ver comprobantes de pago · Testimonios reales · Grupo de
+                            clientes verificados</p>
+                    </div>
+                    <a href="https://t.me/KeysArgentina" target="_blank" rel="noopener noreferrer"
+                        class="btn-tg w-full justify-center" id="telegram-btn">
+                        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                            <path
+                                d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.248l-2.01 9.476c-.148.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12l-6.871 4.326-2.962-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.537-.194 1.006.131.873.745z" />
+                        </svg>
+                        Unirse al Grupo de Telegram
+                    </a>
+                </div>
+            </div>
+
+            <!-- Extra info -->
+            <div class="glass p-6 mt-6 reveal flex flex-col md:flex-row gap-6 items-center">
+                <div class="w-14 h-14 rounded-xl bg-violet-500/15 flex-shrink-0 flex items-center justify-center">
+                    <i data-lucide="clock" class="w-6 h-6 text-violet-400"></i>
+                </div>
+                <div class="flex-1">
+                    <h4 class="font-bold text-slate-100 mb-1">Horario de Atención</h4>
+                    <p class="text-slate-400 text-sm">Lunes a Viernes de <strong class="text-slate-200">9:00 a 22:00
+                            hs</strong> · Sábados y Domingos de <strong class="text-slate-200">10:00 a 20:00
+                            hs</strong>. Fuera del horario respondemos a la brevedad.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="divider w-full max-w-5xl mx-auto"></div>
+
+
+    <!-- ════════════════════════════
+       COMMUNITY / FAQ
+  ════════════════════════════ -->
+    <section id="community" class="py-20 px-6 relative z-10">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-12 reveal">
+                <span class="chip mb-4 inline-flex">
+                    <i data-lucide="users" class="w-3 h-3"></i>
+                    Comunidad
+                </span>
+                <h2 class="text-4xl md:text-5xl font-black mb-4">
+                    Preguntas <span class="neon-text">Frecuentes</span>
+                </h2>
+                <p class="text-slate-400">Todo lo que necesitas saber antes de comprar.</p>
+            </div>
+
+            <div class="space-y-4 reveal" id="faq-container">
+                <!-- FAQ items injected by JS -->
+            </div>
+
+            <!-- Community CTA -->
+            <div class="mt-12 glass p-8 text-center reveal">
+                <div
+                    class="w-14 h-14 rounded-2xl bg-gradient-to-br from-violet-600 to-blue-500 flex items-center justify-center mx-auto mb-5 shadow-lg">
+                    <i data-lucide="star" class="w-6 h-6 text-white"></i>
+                </div>
+                <h3 class="text-2xl font-bold text-slate-100 mb-3">¿Ya eres cliente?</h3>
+                <p class="text-slate-400 mb-6 max-w-md mx-auto">Comparte tu experiencia en nuestro grupo de referencias.
+                    Tu opinión ayuda a otros a comprar con confianza.</p>
+                <a href="https://t.me/KeysArgentina" target="_blank" rel="noopener noreferrer"
+                    class="btn-tg inline-flex">
+                    <i data-lucide="message-circle" class="w-4 h-4"></i>
+                    Compartir mi experiencia
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ════════════════════════════
+       FOOTER
+  ════════════════════════════ -->
+    <footer class="border-t border-white/5 py-10 px-6 relative z-10">
+        <div
+            class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6 text-sm text-slate-500">
+            <div class="flex items-center gap-2">
+                <div class="w-7 h-7 rounded-lg overflow-hidden" style="box-shadow:0 0 8px rgba(124,58,237,0.4)">
+                    <img src="logo.png" alt="KeysArs Logo" class="w-full h-full object-cover" />
+                </div>
+                <span class="font-bold text-slate-300">KeysArs</span>
+            </div>
+            <p>© 2025 KeysArs · Todos los derechos reservados · Licencias digitales originales</p>
+            <div class="flex gap-4">
+                <a href="#" class="hover:text-violet-400 transition-colors">Términos</a>
+                <a href="#" class="hover:text-violet-400 transition-colors">Privacidad</a>
+                <a href="#support" class="hover:text-violet-400 transition-colors">Contacto</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast -->
+    <div id="toast">🛒 ¡Producto agregado! Te contactamos en instantes.</div>
+
+    <!-- ════ FLOATING WHATSAPP BUTTON ════ -->
+    <div id="wa-float">
+        <!-- Tooltip bubble -->
+        <div id="wa-float-tooltip">
+            <button class="wa-close" id="wa-tooltip-close" aria-label="Cerrar">✕</button>
+            <strong>💬 ¡Hola! Estamos aquí</strong>
+            ¿Dudas sobre algún producto o querés hacer tu compra? <br />¡Escribinos por WhatsApp y te respondemos al
+            instante! 🚀
+        </div>
+        <!-- Button -->
+        <a id="wa-float-btn"
+            href="https://wa.me/5493873254866?text=Hola!%20Estoy%20interesado%20en%20comprar%20una%20licencia.%20%C2%BFMe%20pueden%20ayudar%3F"
+            target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp">
+            <svg width="30" height="30" fill="#fff" viewBox="0 0 24 24">
+                <path
+                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
+                <path
+                    d="M12 0C5.373 0 0 5.373 0 12c0 2.123.555 4.116 1.524 5.847L0 24l6.335-1.504A11.946 11.946 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.003-1.364l-.36-.214-3.737.886.944-3.643-.234-.375A9.818 9.818 0 012.182 12c0-5.423 4.395-9.818 9.818-9.818 5.423 0 9.818 4.395 9.818 9.818 0 5.423-4.395 9.818-9.818 9.818z" />
+            </svg>
+        </a>
+    </div>
+
+    <!-- ════════════════════════════
+       JAVASCRIPT
+  ════════════════════════════ -->
+    <script>
+        // ─── Initialize Lucide ───
+        lucide.createIcons();
+
+        // ─── Floating WhatsApp – tooltip + scroll-idle logic ───
+        (function () {
+            const waFloat = document.getElementById('wa-float');
+            const tooltip = document.getElementById('wa-float-tooltip');
+            const closeBtn = document.getElementById('wa-tooltip-close');
+            const dismissed = sessionStorage.getItem('wa-tooltip-dismissed');
+
+            // Auto-show tooltip after 2.5 s (only once per session)
+            if (!dismissed) {
+                setTimeout(() => tooltip.classList.add('visible'), 2500);
+                setTimeout(() => tooltip.classList.remove('visible'), 12000);
+            }
+
+            closeBtn.addEventListener('click', function (e) {
+                e.preventDefault();
+                e.stopPropagation();
+                tooltip.classList.remove('visible');
+                sessionStorage.setItem('wa-tooltip-dismissed', '1');
+            });
+
+            document.getElementById('wa-float-btn').addEventListener('mouseenter', function () {
+                if (!sessionStorage.getItem('wa-tooltip-dismissed')) {
+                    tooltip.classList.add('visible');
+                }
+            });
+
+            // Scroll: shrink + fade when past the hero section
+            const heroSection = document.getElementById('hero');
+            function onScroll() {
+                const heroBottom = heroSection.getBoundingClientRect().bottom;
+                if (heroBottom < 0) {
+                    waFloat.classList.add('wa-idle');
+                } else {
+                    waFloat.classList.remove('wa-idle');
+                }
+            }
+            window.addEventListener('scroll', onScroll, { passive: true });
+            onScroll(); // run once on load
+        })();
+
+        // ─── Sticky Navbar Shadow ───
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            navbar.classList.toggle('scrolled', window.scrollY > 20);
+        });
+
+        // ─── Mobile Menu Toggle ───
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('open');
+            const icon = menuToggle.querySelector('i');
+            icon.setAttribute('data-lucide', mobileMenu.classList.contains('open') ? 'x' : 'menu');
+            lucide.createIcons();
+        });
+        function closeMenu() { mobileMenu.classList.remove('open'); }
+
+        // ─── Product Data ───
+        const products = [
+            // ── OFIMÁTICA ──
+            {
+                id: 1,
+                name: 'Office 2021',
+                price: '$15.000',
+                oldPrice: null,
+                icon: 'file-text',
+                iconColor: '#d83b01',
+                iconBg: 'rgba(216,59,1,0.12)',
+                desc: 'Word, Excel, PowerPoint, Outlook y más. Licencia permanente de un solo pago.',
+                features: ['Pack completo', 'Sin suscripción', '1 PC/Mac'],
+                popular: false,
+                category: 'ofimática',
+            },
+            {
+                id: 2,
+                name: 'Office 2024',
+                price: '$15.000',
+                oldPrice: null,
+                icon: 'file-text',
+                iconColor: '#d83b01',
+                iconBg: 'rgba(216,59,1,0.12)',
+                desc: 'La versión más reciente de Office. Word, Excel, PowerPoint y más. Pago único.',
+                features: ['Última versión', 'Sin suscripción', '1 usuario'],
+                popular: true,
+                category: 'ofimática',
+            },
+            {
+                id: 3,
+                name: 'Office 2019',
+                price: '$15.000',
+                oldPrice: null,
+                icon: 'file-text',
+                iconColor: '#d83b01',
+                iconBg: 'rgba(216,59,1,0.12)',
+                desc: 'Office clásico con Word, Excel y PowerPoint. Licencia permanente.',
+                features: ['Licencia permanente', 'Activación rápida', '1 PC/Mac'],
+                popular: false,
+                category: 'ofimática',
+            },
+            {
+                id: 4,
+                name: 'Microsoft 365',
+                price: '$15.000',
+                oldPrice: null,
+                icon: 'cloud',
+                iconColor: '#0078d4',
+                iconBg: 'rgba(0,120,212,0.12)',
+                desc: 'Office completo + OneDrive + Teams. Apps siempre actualizadas.',
+                features: ['Apps actualizadas', '1 TB OneDrive', 'Multiplataforma'],
+                popular: true,
+                category: 'ofimática',
+            },
+            {
+                id: 5,
+                name: 'CCleaner Anual',
+                price: '$30.000',
+                oldPrice: null,
+                icon: 'trash-2',
+                iconColor: '#16a34a',
+                iconBg: 'rgba(22,163,74,0.12)',
+                desc: 'Limpieza y optimización de PC. Elimina archivos basura, mejora el rendimiento.',
+                features: ['Limpieza automática', 'Actualizaciones 1 año', '3 PCs'],
+                popular: false,
+                category: 'utilidades',
+            },
+            // ── SISTEMA OPERATIVO ──
+            {
+                id: 6,
+                name: 'Windows 7',
+                price: '$16.000',
+                oldPrice: null,
+                icon: 'monitor',
+                iconColor: '#0078d4',
+                iconBg: 'rgba(0,120,212,0.12)',
+                desc: 'Licencia digital original de Windows 7. Activación garantizada.',
+                features: ['Licencia permanente', 'Activación online', '1 PC'],
+                popular: false,
+                category: 'sistema operativo',
+            },
+            {
+                id: 7,
+                name: 'Windows 11 Pro',
+                price: '$15.000',
+                oldPrice: null,
+                icon: 'monitor',
+                iconColor: '#0078d4',
+                iconBg: 'rgba(0,120,212,0.12)',
+                desc: 'Licencia digital permanente de Windows 11 Pro. Activación vía Microsoft.',
+                features: ['Licencia permanente', 'Actualizaciones incluidas', '1 PC'],
+                popular: true,
+                category: 'sistema operativo',
+            },
+            {
+                id: 8,
+                name: 'Windows 10 Pro',
+                price: '$15.000',
+                oldPrice: null,
+                icon: 'monitor',
+                iconColor: '#0078d4',
+                iconBg: 'rgba(0,120,212,0.12)',
+                desc: 'Licencia digital permanente de Windows 10 Pro. Compatible con upgrade a Win 11.',
+                features: ['Activación online', 'Soporte técnico', '1 PC'],
+                popular: false,
+                category: 'sistema operativo',
+            },
+            {
+                id: 9,
+                name: 'Windows 10 Home',
+                price: '$20.000',
+                oldPrice: null,
+                icon: 'monitor',
+                iconColor: '#0078d4',
+                iconBg: 'rgba(0,120,212,0.12)',
+                desc: 'Windows 10 Home para uso personal. Licencia digital permanente.',
+                features: ['Uso personal', 'Licencia permanente', '1 PC'],
+                popular: false,
+                category: 'sistema operativo',
+            },
+            {
+                id: 10,
+                name: 'Windows 11 Home',
+                price: '$20.000',
+                oldPrice: null,
+                icon: 'monitor',
+                iconColor: '#0078d4',
+                iconBg: 'rgba(0,120,212,0.12)',
+                desc: 'Windows 11 Home, la experiencia más moderna de Windows para el hogar.',
+                features: ['Diseño moderno', 'Licencia permanente', '1 PC'],
+                popular: false,
+                category: 'sistema operativo',
+            },
+            // ── STREAMING ──
+            {
+                id: 11,
+                name: 'Netflix Mensual',
+                price: '$8.000',
+                oldPrice: null,
+                icon: 'tv',
+                iconColor: '#e50914',
+                iconBg: 'rgba(229,9,20,0.12)',
+                desc: 'Cuenta Netflix activa. Series y películas en HD y 4K. Entrega inmediata.',
+                features: ['Entrega inmediata', 'HD / 4K', '1 mes'],
+                popular: true,
+                category: 'streaming',
+            },
+            {
+                id: 12,
+                name: 'Netflix Anual',
+                price: '$50.000',
+                oldPrice: null,
+                icon: 'tv',
+                iconColor: '#e50914',
+                iconBg: 'rgba(229,9,20,0.12)',
+                desc: 'Netflix por 12 meses. Ahorrá vs el precio mensual. Entrega inmediata.',
+                features: ['12 meses', 'HD / 4K', 'Mejor precio'],
+                popular: false,
+                category: 'streaming',
+            },
+            {
+                id: 13,
+                name: 'Disney+ Mensual',
+                price: '$7.000',
+                oldPrice: null,
+                icon: 'play-circle',
+                iconColor: '#006e99',
+                iconBg: 'rgba(0,110,153,0.12)',
+                desc: 'Disney+, Marvel, Star Wars, Pixar y más. Entrega inmediata.',
+                features: ['Entrega inmediata', '4K HDR', '1 mes'],
+                popular: false,
+                category: 'streaming',
+            },
+            {
+                id: 14,
+                name: 'Prime Video Mensual',
+                price: '$7.000',
+                oldPrice: null,
+                icon: 'play-circle',
+                iconColor: '#00a8e0',
+                iconBg: 'rgba(0,168,224,0.12)',
+                desc: 'Amazon Prime Video. Series originales y películas en 4K. Entrega inmediata.',
+                features: ['Entrega inmediata', '4K Ultra HD', '1 mes'],
+                popular: false,
+                category: 'streaming',
+            },
+            {
+                id: 15,
+                name: 'Max Mensual',
+                price: '$7.000',
+                oldPrice: null,
+                icon: 'play-circle',
+                iconColor: '#002be7',
+                iconBg: 'rgba(0,43,231,0.12)',
+                desc: 'HBO Max / Max. Game of Thrones, The Last of Us y más. Entrega inmediata.',
+                features: ['Entrega inmediata', 'HDR / 4K', '1 mes'],
+                popular: false,
+                category: 'streaming',
+            },
+            {
+                id: 16,
+                name: 'Vix Mensual',
+                price: '$6.000',
+                oldPrice: null,
+                icon: 'play-circle',
+                iconColor: '#ff6600',
+                iconBg: 'rgba(255,102,0,0.12)',
+                desc: 'Contenido en español, telenovelas, deportes y cine latino. Entrega inmediata.',
+                features: ['Contenido latino', 'Entrega inmediata', '1 mes'],
+                popular: false,
+                category: 'streaming',
+            },
+            // ── IA / PRODUCTIVIDAD ──
+            {
+                id: 17,
+                name: 'ChatGPT Go Pro',
+                price: '$45.000',
+                oldPrice: null,
+                icon: 'bot',
+                iconColor: '#10a37f',
+                iconBg: 'rgba(16,163,127,0.12)',
+                desc: 'ChatGPT Pro con acceso a GPT-4o, análisis de imágenes y generación avanzada.',
+                features: ['GPT-4o', 'Sin límites', 'Acceso prioritario'],
+                popular: true,
+                category: 'inteligencia artificial',
+            },
+            {
+                id: 18,
+                name: 'Gemini Pro Anual',
+                price: '$45.000',
+                oldPrice: null,
+                icon: 'sparkles',
+                iconColor: '#4285f4',
+                iconBg: 'rgba(66,133,244,0.12)',
+                desc: 'Google Gemini Advanced. IA de Google para productividad y creatividad. 1 año.',
+                features: ['Gemini Advanced', '12 meses', 'Google One incluido'],
+                popular: false,
+                category: 'inteligencia artificial',
+            },
+            {
+                id: 19,
+                name: 'Perplexity Anual',
+                price: '$55.000',
+                oldPrice: null,
+                icon: 'search',
+                iconColor: '#20b2aa',
+                iconBg: 'rgba(32,178,170,0.12)',
+                desc: 'Perplexity Pro. El buscador con IA más potente. Respuestas con fuentes reales. 1 año.',
+                features: ['Búsqueda con IA', '12 meses', 'Fuentes verificadas'],
+                popular: false,
+                category: 'inteligencia artificial',
+            },
+            // ── EDICIÓN / DISEÑO ──
+            {
+                id: 20,
+                name: 'CapCut Anual',
+                price: '$50.000',
+                oldPrice: null,
+                icon: 'video',
+                iconColor: '#000000',
+                iconBg: 'rgba(100,100,100,0.15)',
+                desc: 'CapCut Pro. Editor de video con IA para redes sociales. 12 meses.',
+                features: ['IA integrada', 'Sin marca de agua', '12 meses'],
+                popular: false,
+                category: 'diseño',
+            },
+            {
+                id: 21,
+                name: 'CapCut Mensual',
+                price: '$10.000',
+                oldPrice: null,
+                icon: 'video',
+                iconColor: '#000000',
+                iconBg: 'rgba(100,100,100,0.15)',
+                desc: 'CapCut Pro mensual. Edición de video con IA sin marca de agua. 1 mes.',
+                features: ['Sin marca de agua', 'IA integrada', '1 mes'],
+                popular: false,
+                category: 'diseño',
+            },
+            {
+                id: 22,
+                name: 'Adobe Creative Cloud 3m',
+                price: '$45.000',
+                oldPrice: null,
+                icon: 'layers',
+                iconColor: '#ff0000',
+                iconBg: 'rgba(255,0,0,0.1)',
+                desc: 'Photoshop, Illustrator, Premiere y toda la suite Adobe. 3 meses de acceso.',
+                features: ['Suite completa', '100GB en nube', '3 meses'],
+                popular: true,
+                category: 'diseño',
+            },
+            {
+                id: 23,
+                name: 'AutoCAD 2025',
+                price: '$45.000',
+                oldPrice: null,
+                icon: 'pen-tool',
+                iconColor: '#ca4e01',
+                iconBg: 'rgba(202,78,1,0.12)',
+                desc: 'AutoCAD 2025 de Autodesk. Diseño CAD profesional con las últimas herramientas.',
+                features: ['Licencia anual', 'Soporte técnico', 'Actualizaciones'],
+                popular: false,
+                category: 'diseño',
+            },
+            {
+                id: 24,
+                name: 'AutoCAD 2026',
+                price: '$55.000',
+                oldPrice: null,
+                icon: 'pen-tool',
+                iconColor: '#ca4e01',
+                iconBg: 'rgba(202,78,1,0.12)',
+                desc: 'AutoCAD 2026. La versión más nueva con IA generativa incorporada.',
+                features: ['Última versión', 'IA integrada', 'Actualizaciones'],
+                popular: false,
+                category: 'diseño',
+            },
+            // ── MÚSICA ──
+            {
+                id: 25,
+                name: 'Spotify Mensual',
+                price: '$8.000',
+                oldPrice: null,
+                icon: 'music',
+                iconColor: '#1db954',
+                iconBg: 'rgba(29,185,84,0.12)',
+                desc: 'Spotify Premium. Música sin anuncios, descarga y calidad de audio máxima. 1 mes.',
+                features: ['Sin anuncios', 'Descarga offline', '1 mes'],
+                popular: false,
+                category: 'música',
+            },
+            {
+                id: 26,
+                name: 'Spotify Anual',
+                price: '$30.000',
+                oldPrice: null,
+                icon: 'music',
+                iconColor: '#1db954',
+                iconBg: 'rgba(29,185,84,0.12)',
+                desc: 'Spotify Premium por 12 meses. El mejor precio para escuchar sin límites.',
+                features: ['12 meses', 'Sin anuncios', 'Mejor precio'],
+                popular: true,
+                category: 'música',
+            },
+        ];
+
+
+        // ─── Render Products ───
+        function createProductCard(p) {
+            const stars = '★★★★★';
+            const oldPriceBadge = p.oldPrice
+                ? `<span class="text-slate-500 text-xs line-through">${p.oldPrice}</span>`
+                : '';
+            const popularBadge = p.popular
+                ? `<div class="popular-badge">⚡ Popular</div>`
+                : '';
+            const featureChips = p.features.map(f =>
+                `<span class="chip text-xs"><i data-lucide="check" class="w-3 h-3 text-emerald-400"></i>${f}</span>`
+            ).join('');
+
+            return `
+      <div class="glass p-6 flex flex-col gap-4 relative product-card reveal" data-name="${p.name.toLowerCase()} ${p.category.toLowerCase()}">
+        ${popularBadge}
+
+        <!-- Icon -->
+        <div class="w-14 h-14 rounded-2xl flex items-center justify-center" style="background:${p.iconBg}; color:${p.iconColor}">
+          <i data-lucide="${p.icon}" class="w-7 h-7"></i>
+        </div>
+
+        <!-- Name & Price -->
+        <div>
+          <h3 class="text-lg font-bold text-slate-100 leading-tight">${p.name}</h3>
+          <div class="flex items-center gap-2 mt-1">
+            <span class="text-2xl font-black neon-text">${p.price}</span>
+            ${oldPriceBadge}
+          </div>
+        </div>
+
+        <!-- Stars -->
+        <div class="text-yellow-400 text-xs tracking-widest">${stars} <span class="text-slate-500">(${Math.floor(Math.random() * 60) + 30})</span></div>
+
+        <!-- Description -->
+        <p class="text-slate-400 text-sm leading-relaxed flex-1">${p.desc}</p>
+
+        <!-- Feature chips -->
+        <div class="flex flex-wrap gap-2">${featureChips}</div>
+
+        <!-- CTA Button -->
+        <button
+          class="btn-neon w-full flex items-center justify-center gap-2 mt-auto"
+          onclick="handleBuy('${p.name}', '${p.price}')"
+          id="buy-btn-${p.id}"
+        >
+          <i data-lucide="shopping-cart" class="w-4 h-4"></i>
+          Comprar ahora
+        </button>
+      </div>
+    `;
+        }
+
+        function renderProducts(list) {
+            const grid = document.getElementById('product-grid');
+            grid.innerHTML = list.map(createProductCard).join('');
+            lucide.createIcons();
+            initReveal();
+        }
+
+        renderProducts(products);
+
+        // ─── Buy Handler (WhatsApp redirect) ───
+        function handleBuy(name, price) {
+            const msg = encodeURIComponent(`Hola! Quiero comprar la licencia de *${name}* por ${price}. ¿Cómo procedo?`);
+            window.open(`https://wa.me/5493873254866?text=${msg}`, '_blank');
+            showToast(`¡Consultando por ${name}!`);
+        }
+
+        // ─── Toast ───
+        const toastEl = document.getElementById('toast');
+        function showToast(msg) {
+            toastEl.textContent = '🛒 ' + msg;
+            toastEl.classList.add('show');
+            setTimeout(() => toastEl.classList.remove('show'), 3500);
+        }
+
+        // ─── Real-time Search / Filter ───
+        function filterProducts() {
+            const query = document.getElementById('search-input').value.toLowerCase().trim();
+            const filtered = products.filter(p =>
+                p.name.toLowerCase().includes(query) ||
+                p.category.toLowerCase().includes(query) ||
+                p.desc.toLowerCase().includes(query)
+            );
+            const noRes = document.getElementById('no-results');
+            const noResQ = document.getElementById('no-results-query');
+
+            if (filtered.length === 0) {
+                document.getElementById('product-grid').innerHTML = '';
+                noResQ.textContent = query;
+                noRes.style.display = 'block';
+            } else {
+                noRes.style.display = 'none';
+                renderProducts(filtered);
+            }
+        }
+
+        // ─── FAQ Data ───
+        const faqs = [
+            {
+                q: '¿Cómo recibo mi licencia después de pagar?',
+                a: 'Una vez confirmado el pago, te enviamos la clave de activación por WhatsApp o Telegram en un plazo máximo de 15 minutos. También podemos asistirte con la activación en tiempo real.'
+            },
+            {
+                q: '¿Las licencias son permanentes o por suscripción?',
+                a: 'La mayoría de nuestras licencias son permanentes (pago único). En los casos donde se trate de una suscripción anual, lo indicamos claramente en la descripción del producto.'
+            },
+            {
+                q: '¿Qué pasa si la clave no funciona?',
+                a: 'Contamos con garantía total. Si la clave no activa el producto correctamente, te la reponemos sin costo adicional o te realizamos el reembolso completo.'
+            },
+            {
+                q: '¿Cuáles son los métodos de pago aceptados?',
+                a: 'Aceptamos transferencia bancaria, Mercado Pago, PayPal y criptomonedas. Consulta con nuestro equipo para disponibilidad en tu país.'
+            },
+            {
+                q: '¿Puedo ver pruebas de otros compradores?',
+                a: 'Por supuesto. Tenemos un grupo dedicado en Telegram con capturas de pantalla y testimonios de clientes verificados. ¡Únete y compruébalo!'
+            },
+        ];
+
+        // ─── Render FAQ ───
+        const faqContainer = document.getElementById('faq-container');
+        faqContainer.innerHTML = faqs.map((item, i) => `
+    <div class="glass overflow-hidden">
+      <button
+        class="w-full text-left px-6 py-5 flex items-center justify-between gap-4 font-semibold text-slate-100 hover:text-violet-300 transition-colors"
+        onclick="toggleFaq(${i})"
+        id="faq-btn-${i}"
+      >
+        <span>${item.q}</span>
+        <i data-lucide="chevron-down" class="w-5 h-5 flex-shrink-0 transition-transform duration-300" id="faq-icon-${i}"></i>
+      </button>
+      <div id="faq-body-${i}" class="px-6 text-slate-400 text-sm leading-relaxed overflow-hidden max-h-0 transition-all duration-500">
+        <p class="pb-5">${item.a}</p>
+      </div>
+    </div>
+  `).join('');
+        lucide.createIcons();
+
+        function toggleFaq(i) {
+            const body = document.getElementById(`faq-body-${i}`);
+            const icon = document.getElementById(`faq-icon-${i}`);
+            const isOpen = body.style.maxHeight && body.style.maxHeight !== '0px';
+            // Close all
+            document.querySelectorAll('[id^="faq-body-"]').forEach((el, idx) => {
+                el.style.maxHeight = '0px';
+                document.getElementById(`faq-icon-${idx}`).style.transform = 'rotate(0deg)';
+            });
+            if (!isOpen) {
+                body.style.maxHeight = body.scrollHeight + 'px';
+                icon.style.transform = 'rotate(180deg)';
+            }
+        }
+
+        // ─── Scroll Reveal (IntersectionObserver) ───
+        function initReveal() {
+            const els = document.querySelectorAll('.reveal:not(.visible)');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry, i) => {
+                    if (entry.isIntersecting) {
+                        setTimeout(() => {
+                            entry.target.classList.add('visible');
+                        }, i * 80);
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1 });
+            els.forEach(el => observer.observe(el));
+        }
+        initReveal();
+
+        // ─── Smooth scroll polyfill trigger ───
+        document.querySelectorAll('a[href^="#"]').forEach(link => {
+            link.addEventListener('click', (e) => {
+                const target = document.querySelector(link.getAttribute('href'));
+                if (target) {
+                    e.preventDefault();
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
