@@ -1,0 +1,710 @@
+﻿        /* â”€â”€ Global â”€â”€ */
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+
+        html {
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            background: #070714;
+            color: #e2e8f0;
+            overflow-x: hidden;
+        }
+
+        /* â”€â”€ Animated gradient background â”€â”€ */
+        .bg-animated {
+            background: linear-gradient(135deg, #070714 0%, #0d0a2e 40%, #160f3a 70%, #070714 100%);
+            background-size: 400% 400%;
+            animation: gradShift 12s ease infinite;
+        }
+
+        @keyframes gradShift {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        /* â”€â”€ Floating orbs â”€â”€ */
+        .orb {
+            position: fixed;
+            border-radius: 50%;
+            filter: blur(80px);
+            opacity: 0.18;
+            pointer-events: none;
+            z-index: 0;
+            animation: float 18s ease-in-out infinite alternate;
+        }
+
+        .orb-1 {
+            width: 500px;
+            height: 500px;
+            background: #7c3aed;
+            top: -140px;
+            left: -140px;
+        }
+
+        .orb-2 {
+            width: 400px;
+            height: 400px;
+            background: #2563eb;
+            bottom: -120px;
+            right: -80px;
+            animation-delay: -6s;
+        }
+
+        .orb-3 {
+            width: 300px;
+            height: 300px;
+            background: #0891b2;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            animation-delay: -12s;
+        }
+
+        @keyframes float {
+            from {
+                transform: translate(0, 0) scale(1);
+            }
+
+            to {
+                transform: translate(30px, 40px) scale(1.08);
+            }
+        }
+
+        /* â”€â”€ Glassmorphism card â”€â”€ */
+        .glass {
+            background: rgba(255, 255, 255, 0.04);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 16px;
+            transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
+        }
+
+        .glass:hover {
+            transform: translateY(-8px) scale(1.02);
+            box-shadow: 0 0 28px rgba(139, 92, 246, 0.45), 0 16px 40px rgba(0, 0, 0, 0.5);
+            border-color: rgba(139, 92, 246, 0.45);
+        }
+
+        /* â”€â”€ Neon gradient text â”€â”€ */
+        .neon-text {
+            background: linear-gradient(90deg, #818cf8, #8b5cf6, #3b82f6, #06b6d4);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            background-size: 300% 100%;
+            animation: shimmer 4s linear infinite;
+        }
+
+        @keyframes shimmer {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            100% {
+                background-position: 300% 50%;
+            }
+        }
+
+        /* â”€â”€ Neon button â”€â”€ */
+        .btn-neon {
+            background: linear-gradient(135deg, #7c3aed, #3b82f6);
+            border: none;
+            border-radius: 10px;
+            color: #fff;
+            font-weight: 700;
+            padding: 0.65rem 1.4rem;
+            cursor: pointer;
+            transition: box-shadow 0.3s ease, transform 0.2s ease, opacity 0.2s;
+            box-shadow: 0 4px 18px rgba(124, 58, 237, 0.5);
+        }
+
+        .btn-neon:hover {
+            box-shadow: 0 6px 28px rgba(59, 130, 246, 0.7), 0 0 12px rgba(139, 92, 246, 0.6);
+            transform: translateY(-2px);
+        }
+
+        .btn-neon:active {
+            transform: scale(0.97);
+        }
+
+        /* â”€â”€ WhatsApp / Telegram buttons â”€â”€ */
+        .btn-wa {
+            background: linear-gradient(135deg, #128C7E, #25D366);
+            color: #fff;
+            font-weight: 700;
+            border-radius: 12px;
+            padding: 0.8rem 1.8rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            transition: box-shadow 0.3s, transform 0.2s;
+            box-shadow: 0 4px 20px rgba(37, 211, 102, 0.35);
+        }
+
+        .btn-wa:hover {
+            box-shadow: 0 6px 28px rgba(37, 211, 102, 0.6);
+            transform: translateY(-3px);
+        }
+
+        .btn-tg {
+            background: linear-gradient(135deg, #0088cc, #00b4d8);
+            color: #fff;
+            font-weight: 700;
+            border-radius: 12px;
+            padding: 0.8rem 1.8rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            transition: box-shadow 0.3s, transform 0.2s;
+            box-shadow: 0 4px 20px rgba(0, 136, 204, 0.35);
+        }
+
+        .btn-tg:hover {
+            box-shadow: 0 6px 28px rgba(0, 136, 204, 0.6);
+            transform: translateY(-3px);
+        }
+
+        /* â”€â”€ Sticky navbar â”€â”€ */
+        #navbar {
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            background: rgba(7, 7, 20, 0.75);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+            transition: box-shadow 0.3s;
+        }
+
+        #navbar.scrolled {
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        /* â”€â”€ Mobile menu â”€â”€ */
+        #mobile-menu {
+            display: none;
+        }
+
+        #mobile-menu.open {
+            display: block;
+        }
+
+        /* â”€â”€ Price badge â”€â”€ */
+        .price-badge {
+            background: linear-gradient(135deg, #7c3aed 0%, #3b82f6 100%);
+            border-radius: 999px;
+            font-size: 0.85rem;
+            padding: 2px 12px;
+            font-weight: 700;
+            display: inline-block;
+        }
+
+        /* â”€â”€ Search input â”€â”€ */
+        #search-input {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            border-radius: 12px;
+            color: #e2e8f0;
+            padding: 0.65rem 1rem 0.65rem 2.75rem;
+            outline: none;
+            transition: border-color 0.3s, box-shadow 0.3s;
+            width: 100%;
+            max-width: 420px;
+        }
+
+        #search-input:focus {
+            border-color: #7c3aed;
+            box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.2);
+        }
+
+        #search-input::placeholder {
+            color: rgba(226, 232, 240, 0.35);
+        }
+
+        .currency-selector {
+            display: inline-flex;
+            gap: 6px;
+            padding: 6px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            background: rgba(15, 23, 42, 0.55);
+            backdrop-filter: blur(14px);
+        }
+
+        .currency-option {
+            min-width: 54px;
+            height: 36px;
+            padding: 0 14px;
+            border-radius: 8px;
+            color: #94a3b8;
+            font-size: 0.78rem;
+            font-weight: 800;
+            letter-spacing: 0;
+            transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .currency-option:hover {
+            color: #e2e8f0;
+            background: rgba(255, 255, 255, 0.06);
+        }
+
+        .currency-option.active {
+            color: #fff;
+            background: linear-gradient(135deg, #7c3aed, #06b6d4);
+            box-shadow: 0 0 18px rgba(139, 92, 246, 0.35);
+        }
+
+        /* â”€â”€ Scroll reveal â”€â”€ */
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.7s ease, transform 0.7s ease;
+        }
+
+        .reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* â”€â”€ Hero gradient overlay â”€â”€ */
+        .hero-glow {
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(ellipse 80% 60% at 50% 0%, rgba(124, 58, 237, 0.18) 0%, transparent 70%);
+            pointer-events: none;
+        }
+
+        /* â”€â”€ Model carousel â”€â”€ */
+        .model-img-wrap {
+            position: relative;
+            flex-shrink: 0;
+            border-radius: 24px;
+        }
+
+        .model-img-wrap::before {
+            content: '';
+            position: absolute;
+            inset: -3px;
+            border-radius: 26px;
+            background: linear-gradient(135deg, #7c3aed, #3b82f6, #06b6d4);
+            z-index: 0;
+            animation: borderGlow 4s linear infinite;
+        }
+
+        @keyframes borderGlow {
+
+            0%,
+            100% {
+                opacity: 0.7;
+            }
+
+            50% {
+                opacity: 1;
+            }
+        }
+
+        /* Carousel container */
+        .model-carousel {
+            position: relative;
+            z-index: 1;
+            border-radius: 22px;
+            overflow: hidden;
+            width: 100%;
+            aspect-ratio: 3/4;
+            max-width: 440px;
+            background: rgba(0, 0, 0, 0.3);
+        }
+
+        .model-slide {
+            position: absolute;
+            inset: 0;
+            opacity: 0;
+            animation: modelSlide 12s infinite;
+        }
+
+        .model-slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: top center;
+            display: block;
+            border-radius: 22px;
+        }
+
+        .model-slide:nth-child(1) {
+            animation-delay: 0s;
+        }
+
+        .model-slide:nth-child(2) {
+            animation-delay: 4s;
+        }
+
+        .model-slide:nth-child(3) {
+            animation-delay: 8s;
+        }
+
+        @keyframes modelSlide {
+            0% {
+                opacity: 0;
+                transform: scale(1.04);
+            }
+
+            6% {
+                opacity: 1;
+                transform: scale(1);
+            }
+
+            30% {
+                opacity: 1;
+                transform: scale(1);
+            }
+
+            36% {
+                opacity: 0;
+                transform: scale(0.97);
+            }
+
+            100% {
+                opacity: 0;
+                transform: scale(1.04);
+            }
+        }
+
+        /* Slide dots */
+        .model-dots {
+            position: absolute;
+            bottom: 12px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 6px;
+            z-index: 2;
+        }
+
+        .model-dot {
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.4);
+            animation: dotActive 12s infinite;
+        }
+
+        .model-dot:nth-child(1) {
+            animation-delay: 0s;
+        }
+
+        .model-dot:nth-child(2) {
+            animation-delay: 4s;
+        }
+
+        .model-dot:nth-child(3) {
+            animation-delay: 8s;
+        }
+
+        @keyframes dotActive {
+
+            0%,
+            5% {
+                background: #fff;
+                transform: scale(1.4);
+            }
+
+            36%,
+            100% {
+                background: rgba(255, 255, 255, 0.35);
+                transform: scale(1);
+            }
+        }
+
+        .model-img-glow {
+            position: absolute;
+            bottom: -30px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80%;
+            height: 60px;
+            background: radial-gradient(ellipse, rgba(124, 58, 237, 0.45) 0%, transparent 70%);
+            filter: blur(20px);
+            z-index: 0;
+        }
+
+        /* â”€â”€ Badge "popular" â”€â”€ */
+        .popular-badge {
+            position: absolute;
+            top: -12px;
+            right: 16px;
+            background: linear-gradient(90deg, #ec4899, #8b5cf6);
+            font-size: 0.72rem;
+            font-weight: 800;
+            padding: 3px 14px;
+            border-radius: 999px;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            box-shadow: 0 0 12px rgba(236, 72, 153, 0.55);
+        }
+
+        /* â”€â”€ Feature chip â”€â”€ */
+        .chip {
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            background: rgba(139, 92, 246, 0.12);
+            border: 1px solid rgba(139, 92, 246, 0.2);
+            border-radius: 999px;
+            font-size: 0.72rem;
+            font-weight: 600;
+            padding: 3px 10px;
+            color: #a78bfa;
+        }
+
+        /* â”€â”€ Stats â”€â”€ */
+        .stat-num {
+            font-size: 2.4rem;
+            font-weight: 900;
+        }
+
+        /* â”€â”€ Scrollbar â”€â”€ */
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #070714;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #7c3aed;
+            border-radius: 3px;
+        }
+
+        /* â”€â”€ Section divider â”€â”€ */
+        .divider {
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(139, 92, 246, 0.4), transparent);
+            margin: 0 auto;
+        }
+
+        /* â”€â”€ Skeleton loader â”€â”€ */
+        .skeleton-bone {
+            background: linear-gradient(90deg,
+                    rgba(255, 255, 255, 0.04) 25%,
+                    rgba(255, 255, 255, 0.08) 50%,
+                    rgba(255, 255, 255, 0.04) 75%);
+            background-size: 200% 100%;
+            animation: skeletonShimmer 1.5s ease-in-out infinite;
+        }
+
+        @keyframes skeletonShimmer {
+            0% {
+                background-position: 200% 0;
+            }
+
+            100% {
+                background-position: -200% 0;
+            }
+        }
+
+        .skeleton-card {
+            pointer-events: none;
+        }
+
+        /* â”€â”€ No-results â”€â”€ */
+        #no-results {
+            display: none;
+        }
+
+        /* â”€â”€ Product grid â”€â”€ */
+        #product-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.25rem;
+        }
+
+        @media (min-width: 768px) {
+            #product-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        @media (min-width: 1280px) {
+            #product-grid {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+
+        /* â”€â”€ Toast â”€â”€ */
+        #toast {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            z-index: 9999;
+            background: linear-gradient(135deg, #7c3aed, #3b82f6);
+            color: #fff;
+            padding: 0.8rem 1.5rem;
+            border-radius: 12px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            box-shadow: 0 8px 24px rgba(124, 58, 237, 0.5);
+            transform: translateY(100px);
+            opacity: 0;
+            transition: transform 0.4s ease, opacity 0.4s ease;
+            pointer-events: none;
+        }
+
+        #toast.show {
+            transform: translateY(0);
+            opacity: 1;
+        }
+
+        /* â”€â”€ Floating WhatsApp Button â”€â”€ */
+        #wa-float {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 99999;
+            width: fit-content;
+            display: flex;
+            align-items: flex-end;
+            flex-direction: row-reverse;
+            gap: 12px;
+            cursor: pointer;
+            transition: opacity 0.4s ease, transform 0.4s ease;
+        }
+
+        /* Siempre visible y al 100% de opacidad */
+        #wa-float:hover #wa-float-btn {
+            transform: scale(1.12);
+        }
+
+        #wa-float-btn {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #128C7E, #25D366);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 6px 24px rgba(37, 211, 102, 0.55), 0 0 0 0 rgba(37, 211, 102, 0.4);
+            animation: waPulse 2.5s ease-in-out infinite;
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+            flex-shrink: 0;
+            text-decoration: none;
+        }
+
+        #wa-float-btn:hover {
+            transform: scale(1.12);
+            box-shadow: 0 8px 32px rgba(37, 211, 102, 0.75);
+        }
+
+        @keyframes waPulse {
+
+            0%,
+            100% {
+                box-shadow: 0 6px 24px rgba(37, 211, 102, 0.55), 0 0 0 0 rgba(37, 211, 102, 0.4);
+            }
+
+            50% {
+                box-shadow: 0 6px 24px rgba(37, 211, 102, 0.55), 0 0 0 14px rgba(37, 211, 102, 0);
+            }
+        }
+
+        #wa-float-tooltip {
+            background: #fff;
+            color: #111827;
+            border-radius: 16px;
+            padding: 12px 16px;
+            max-width: 230px;
+            font-size: 0.82rem;
+            line-height: 1.45;
+            font-weight: 500;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.22);
+            position: relative;
+            opacity: 0;
+            transform: translateX(-10px);
+            transition: opacity 0.35s ease, transform 0.35s ease;
+            pointer-events: none;
+        }
+
+        #wa-float-tooltip.visible {
+            opacity: 1;
+            transform: translateX(0);
+            pointer-events: auto;
+        }
+
+        #wa-float-tooltip::after {
+            content: '';
+            position: absolute;
+            bottom: 14px;
+            left: -8px;
+            border-width: 8px 8px 8px 0;
+            border-style: solid;
+            border-color: transparent #fff transparent transparent;
+        }
+
+        #wa-float-tooltip .wa-close {
+            position: absolute;
+            top: 6px;
+            right: 8px;
+            font-size: 0.75rem;
+            color: #9ca3af;
+            cursor: pointer;
+            line-height: 1;
+            background: none;
+            border: none;
+            padding: 2px 4px;
+        }
+
+        #wa-float-tooltip .wa-close:hover {
+            color: #374151;
+        }
+
+        #wa-float-tooltip strong {
+            display: block;
+            margin-bottom: 4px;
+            font-size: 0.88rem;
+            color: #128C7E;
+        }
+
+        /* Mobile adjustments for WA float */
+        @media (max-width: 640px) {
+            #wa-float {
+                bottom: 20px;
+                right: 20px;
+                flex-direction: column;
+                align-items: flex-end;
+                gap: 8px;
+            }
+
+            #wa-float-btn {
+                width: 54px;
+                height: 54px;
+                border-radius: 50%;
+            }
+
+            #wa-float-tooltip {
+                max-width: min(220px, calc(100vw - 80px));
+                font-size: 0.78rem;
+            }
+
+            #wa-float-tooltip::after {
+                left: auto;
+                right: 18px;
+                bottom: -8px;
+                top: auto;
+                border-width: 8px 8px 0 8px;
+                border-color: #fff transparent transparent transparent;
+            }
+        }
+
